@@ -3,8 +3,17 @@ name: Build Resume PDF
 on:
   push:
     branches: [main]
+    paths:
+      - "enkherdene_bolormaa.org"
+      - "enkherdene_bolormaa.sty"
+      - "personal-info.org"
   pull_request:
     branches: [main]
+    paths:
+      - "enkherdene_bolormaa.org"
+      - "enkherdene_bolormaa.sty"
+      - "personal-info.org"
+  workflow_dispatch:
 
 jobs:
   build:
