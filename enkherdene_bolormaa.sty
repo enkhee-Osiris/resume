@@ -1,0 +1,72 @@
+% Clean modern resume style — Enkh-Erdene Bolormaa
+% Font: Lato (included in TeX Live via the lato package)
+
+\RequirePackage{color,calc,hyperref,titlesec,microtype}
+\RequirePackage[empty]{fullpage}
+\RequirePackage{xstring}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[default]{lato}
+
+% --- Margins ---
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{0.75in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{0.5in}
+
+% --- Colors ---
+\definecolor{name-color}{RGB}{28, 60, 95}   % deep navy for name
+\definecolor{url-gray}{gray}{0.25}           % links
+\definecolor{muted}{gray}{0.45}              % dates, secondary text
+\definecolor{rule-color}{gray}{0.75}         % subtle lines
+
+% --- Bullets ---
+\def\labelitemi{$\bullet$}
+
+% --- Header: name left, contact right ---
+\newcommand{\resheader}[4]{%
+  \StrDel{#4}{+}[\tmpA]%
+  \noindent
+  {\huge\bfseries\color{name-color} #1}
+  \vspace{6pt}
+  \par\noindent
+  \small
+  \href{mailto:#3}{#3}
+  \textcolor{muted}{\textbar}~\href{tel:\tmpA}{#4}
+  \textcolor{muted}{\textbar}~\url{#2}
+  \vspace{6pt}
+  \par\noindent{\color{rule-color}\hrule height 0.8pt}
+  \vspace{12pt}
+}
+
+% --- Section headings: bold small-caps + rule below ---
+\titleformat{\section}
+  {\large\bfseries\scshape}
+  {}
+  {0pt}
+  {}
+  [\vspace{-4pt}{\color{rule-color}\rule{\linewidth}{0.5pt}}]
+\titlespacing{\section}{0pt}{10pt}{8pt}
+
+% --- Subsection: employer / role ---
+\titleformat{\subsection}
+  [block]
+  {\bfseries\normalsize}
+  {}
+  {0pt}
+  {}
+  []
+\titlespacing{\subsection}{0pt}{8pt}{0pt}[0pt]
+
+% --- Subsubsection: date (right-aligned, muted) ---
+\titleformat{\subsubsection}
+  [block]
+  {\small\itshape\color{muted}\raggedleft}
+  {}
+  {0pt}
+  {}
+  []
+\titlespacing{\subsubsection}{0pt}{-2pt}{4pt}[0pt]

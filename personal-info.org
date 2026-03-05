@@ -1,0 +1,9 @@
+#+MACRO: FIRST       Enkh-Erdene
+#+MACRO: LAST        Bolormaa
+#+MACRO: FULL        {{{FIRST}}} {{{LAST}}}
+
+#+MACRO: BLOG        http://enkhee-Osiris.github.io
+#+MACRO: MAIL        enkhee.ag@gmail.com
+#+MACRO: PHONE       +97688788507
+#+MACRO: CLEAN_PHONE \StrRemoveSpaces{{{{PHONE}}}}
+#+MACRO: HEADER      \resheader{{{{FULL}}}}{{{{BLOG}}}}{{{{MAIL}}}}{{{{PHONE}}}}

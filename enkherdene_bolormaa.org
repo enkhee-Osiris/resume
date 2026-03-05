@@ -1,0 +1,64 @@
+#+OPTIONS: toc:nil H:10 tex:t
+#+STARTUP: hidestars indent
+#+INCLUDE: personal-info.org
+#+LaTeX_HEADER: \usepackage{enkherdene_bolormaa}
+#+LaTeX_HEADER: \hypersetup{colorlinks=true, urlcolor={url-gray}}
+#+LaTeX_HEADER: \usepackage{enumitem}
+#+LaTeX_HEADER: \usepackage{xstring}
+#+LaTeX_HEADER: \setlist{leftmargin=0.25in,nosep}
+#+LaTeX_CLASS_OPTIONS: [a4]
+#+LATEX_COMPILER: pdflatex
+
+{{{HEADER}}}
+
+* Summary
+Front-end developer with src_elisp[:results raw]{(- (string-to-number (format-time-string "%Y")) 2017)} years of experience building web and mobile applications. Proficient in HTML, CSS, JavaScript, and TypeScript. Enjoys working with modern frameworks and configuring CI/CD pipelines to improve the development experience.
+
+* Skills
+  - Languages :: HTML, CSS, JavaScript, TypeScript
+  - Libs and Frameworks :: React, React Native, Next.js, MUI, Mantine, Tailwind CSS
+  - Tools and Platforms :: TurboRepo, Docker, Webpack, Vite
+  - VCS :: Git
+  - Editors :: Vim, Emacs
+* Experience
+** Senior Software Engineer at Zero Technology LLC, Ulaanbaatar
+*** Feb 2023 - Feb 2025
+- Created an internal Refine-based framework standard to streamline admin dashboard development
+- Built a financial transaction and report analysis web app for Digital Concept, with an admin panel to correct erroneous transactions
+- Built a voucher-based food ordering mobile app for Shunkhlai Group, allowing users to order food by scanning a QR code
+- Built a milk collection admin dashboard with WebRTC integration for APU Dairy
+- Built a store manager dashboard for GS25 to track part-time employees' work hours and salaries
+- Built a comprehensive admin dashboard for a part-time staffing platform, managing employees, salaries, work hours, and branches
+** Senior Software Engineer at [[https://xyyp.mn][Xyyp Music Group]], Ulaanbaatar
+*** Aug 2021 - Mar 2022
+- Wrote unit and integration tests with Jest
+- Developed a React Native mobile app
+- Built web apps with Next.js
+- Built covid.mn with Tailwind CSS and Next.js
+- Used Material UI, GraphQL, Next.js, and Tailwind CSS for development
+** Front-end Developer at [[https://andsystems.net][ANDSystems]], Ulaanbaatar
+*** Oct 2018 - Jul 2021
+- Developed multiple React Native mobile apps and libraries
+- Built multiple web apps with React and Next.js
+- Created a PDF table scraper CLI with Node.js
+- Created multiple Slack bots
+- Improved code quality standards and practices
+** Web Developer at [[https://nomadays.com][Nomadays]], Ulaanbaatar
+*** Jul 2018 - Oct 2018
+- Migrated an Angular app to React
+** Front-end Developer at [[https://www.eys-style.com][EYS-Style]], Tokyo
+*** Jan 2017 - Jul 2018
+- Web development with Ruby on Rails
+- Developed a custom Slack bot
+- Improved development tooling with Google Apps Script
+* Education
+** Mongolian University of Science and Technology, Ulaanbaatar
+*** Aug 2013 - Jun 2018
+/B.S. Computer Science/, GPA: 3.67/4.0
+* Honors and Awards
+** First place in The [[https://www.unread.today/c/2191][Water Mine Hackathon]]
+*** 2020
+** First place in The [[https://www.haruulzangi.mn][HaruulZangi]] CTF Competition
+*** 2019
+** First place in The [[https://www.haruulzangi.mn][HaruulZangi]] CTF Competition
+*** 2018

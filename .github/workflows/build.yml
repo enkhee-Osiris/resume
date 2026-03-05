@@ -1,0 +1,31 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            emacs-nox \
+            texlive-latex-extra \
+            texlive-fonts-extra
+
+      - name: Build PDF
+        run: emacs --batch -l org enkherdene_bolormaa.org -f org-latex-export-to-pdf
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: enkherdene_bolormaa.pdf
