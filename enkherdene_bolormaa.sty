@@ -61,12 +61,13 @@
   []
 \titlespacing{\subsection}{0pt}{8pt}{0pt}[0pt]
 
-% --- Subsubsection: date (right-aligned, muted) ---
-\titleformat{\subsubsection}
-  [block]
-  {\small\itshape\color{muted}\raggedleft}
-  {}
-  {0pt}
-  {}
-  []
-\titlespacing{\subsubsection}{0pt}{-2pt}{4pt}[0pt]
+% --- Subsubsection: date on same line as subsection, right-aligned ---
+% Bypass titlesec (it clamps negative before-spacing to 0).
+% \vspace*{-\baselineskip} pulls the date up onto the subsection line.
+\makeatletter
+\renewcommand{\subsubsection}[1]{%
+  \vspace*{-\baselineskip}%
+  \noindent\hfill{\small\itshape\color{muted}#1}\par
+  \vspace{4pt}%
+}
+\makeatother
