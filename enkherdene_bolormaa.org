@@ -16,7 +16,7 @@ Front-end developer with src_elisp[:results raw]{(- (string-to-number (format-ti
 
 * Skills
   - Languages :: HTML, CSS, JavaScript, TypeScript
-  - Libs and Frameworks :: React, React Native, Next.js, MUI, Mantine, Tailwind CSS
+  - Libs and Frameworks :: React, React Native, Next.js, Astro.js, MUI, Mantine, Tailwind CSS
   - Tools and Platforms :: TurboRepo, Docker, Webpack, Vite
   - VCS :: Git
   - Editors :: Vim, Emacs
