@@ -26,7 +26,7 @@ Front-end developer with src_elisp[:results raw]{(- (string-to-number (format-ti
 - Created an internal Refine-based framework standard to streamline admin dashboard development
 - Built a financial transaction and report analysis web app for Digital Concept, with an admin panel to correct erroneous transactions
 - Built a voucher-based food ordering mobile app for Shunkhlai Group, allowing users to order food by scanning a QR code
-- Built a milk collection admin dashboard with WebRTC integration for APU Dairy
+- Built a milk collection admin dashboard with trpc for APU Dairy
 - Built a store manager dashboard for GS25 to track part-time employees' work hours and salaries
 - Built a comprehensive admin dashboard for a part-time staffing platform, managing employees, salaries, work hours, and branches
 ** Senior Software Engineer at [[https://xyyp.mn][Xyyp Music Group]], Ulaanbaatar
