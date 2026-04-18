@@ -23,34 +23,80 @@ Front-end developer with src_elisp[:results raw]{(- (string-to-number (format-ti
 * Experience
 ** Senior Software Engineer at Zero Technology LLC, Ulaanbaatar
 *** Feb 2023 - Feb 2025
-- Created an internal Refine-based framework standard to streamline admin dashboard development
-- Built a financial transaction and report analysis web app for Digital Concept, with an admin panel to correct erroneous transactions
-- Built a voucher-based food ordering mobile app for Shunkhlai Group, allowing users to order food by scanning a QR code
-- Built a milk collection admin dashboard with trpc for APU Dairy
-- Built a store manager dashboard for GS25 to track part-time employees' work hours and salaries
-- Built a comprehensive admin dashboard for a part-time staffing platform, managing employees, salaries, work hours, and branches
+- *APU Dairy* — Full-stack dairy supply chain management system (Turborepo monorepo)
+  - Built the admin dashboard with React, Mantine UI, Vite, and TanStack Router featuring data tables, analytics charts (ApexCharts), and Excel export
+  - Implemented a type-safe tRPC API layer with Express.js and PostgreSQL/Prisma for end-to-end TypeScript safety
+  - Mentored the React Native/Expo mobile team on architecture decisions and best practices
+- *Capital Voucher App* — Cross-platform voucher management mobile app for Shunkhlai Group
+  - Built with React Native/Expo and TypeScript supporting cashier QR scanning and employee voucher lifecycle management
+  - Implemented role-based JWT authentication, real-time data sync with React Query, and persistent state with Zustand
+  - Delivered smooth animations with Reanimated, high-performance lists with Flash List, deployed to iOS/Android via Expo EAS Build
+- *PartTime HQ* — Admin dashboard for a part-time staffing platform
+  - Built with React 18, TypeScript, Mantine UI v7, TanStack Router/Query, and Zustand
+  - Implemented JWT auth with automatic token refresh queue and organization-scoped role-based access control
+  - Developed virtualized data tables with TanStack Table/Virtual supporting server-side pagination and filter operators
+  - Built salary calculation with social insurance and tax breakdowns, fund allocation management, and Excel export
+- *PartTime SQ* — Shift management dashboard for GS25
+  - Built with Next.js 14, Refine, Mantine UI, and TanStack Table as a multi-branch workforce scheduling and payroll portal
+  - Developed complex shift lifecycle workflows
+  - Integrated Firebase Cloud Messaging for real-time push notifications with a custom notification provider
+  - Built salary engine handling hourly wages, overtime, social insurance contributions, and income tax deductions
+  - Designed multi-tenant architecture with role-based access control
+- *GS Payment Gateway* — Enterprise payment gateway dashboard for GS25
+  - Built using Next.js, TypeScript, and MUI in a Turborepo monorepo with shared API, state, UI, and utility packages
+  - Implemented dual payment gateway integration (TDB/QPAY) with automated transaction matching and reconciliation
+  - Developed interactive analytics dashboards with Chart.js for real-time transaction monitoring and branch performance
+  - Created a reusable component design system documented in Storybook with visual regression testing via Chromatic
+  - Implemented loyalty point and voucher management (LMS) with real-time balance tracking
+- *Admin Boilerplate* — Enterprise dashboard boilerplate
+  - Developed virtualized data tables with TanStack Table/Virtual supporting server-side pagination
+  - Created reusable components
 ** Senior Software Engineer at [[https://xyyp.mn][Xyyp Music Group]], Ulaanbaatar
 *** Aug 2021 - Mar 2022
-- Wrote unit and integration tests with Jest
-- Developed a React Native mobile app
-- Built web apps with Next.js
-- Built covid.mn with Tailwind CSS and Next.js
-- Used Material UI, GraphQL, Next.js, and Tailwind CSS for development
+- *Covid.mn* — COVID-19 public information portal for Mongolian citizens
+  - Built with Next.js, TypeScript, React, and Tailwind CSS providing real-time COVID-19 statistics and vaccination center directories
+  - Implemented Static Site Generation (SSG) for location pages and SWR-based client-side data fetching for live statistics
+  - Developed a data pipeline using Node.js to parse government XLSX spreadsheets into structured JSON across 9 districts and 100+ locations
+  - Integrated Google Maps for location navigation, phone call actions, and vaccine type indicators (Pfizer, Sinopharm, Sputnik V)
+  - Optimized SEO with Open Graph and Twitter Card meta tags, sitemap generation, and semantic HTML
+- *About Stitches* — Interactive presentation deck application
+  - Built with React, TypeScript, and Vite to showcase the Stitches CSS-in-JS library
+  - Developed a custom presentation framework (~3,000 LOC) with slide navigation, step-based content reveal, keyboard/touch gestures, URL state sync, presenter mode, and animated transitions
+  - Styled with Stitches, Styled Components, and Styled System, with animations powered by React Spring
+- *Music Streaming Platform* — Client web and mobile apps for a Spotify-like music streaming service
+  - Built the web client with Next.js, TypeScript, and GraphQL in a monorepo shared with the mobile app
+  - Built the mobile client with React Native, TypeScript, and GraphQL sharing TypeScript model types across both platforms
+  - Wrote unit and integration tests with Jest
 ** Front-end Developer at [[https://andsystems.net][ANDSystems]], Ulaanbaatar
 *** Oct 2018 - Jul 2021
-- Developed multiple React Native mobile apps and libraries
+- *Eatfirst Slack Bot* — Automated group lunch ordering system for office teams
+  - Built with Python/Flask integrating Eatfirst.mn food delivery API and Mongolian payment gateways (SocialPay, LendMN)
+  - Designed interactive Slack UX with slash commands, action buttons, and dialog modals using Slack Events API
+  - Persisted user profiles and order data in Firebase Firestore with order lifecycle state management
+  - Containerized the application with Docker and handled concurrent Slack API calls using Python threading
+- *Xypyy* — Automated employee attendance tracking system
+  - Built with Python and Slack API integrating ZK fingerprint scanners via real-time TCP/IP event streaming
+  - Designed a 3-process architecture managed by PM2 inside a Docker Alpine container
+  - Implemented work hour calculations, lunch duration deductions, daily reminders, weekly summaries, and live office status updates via Slack Block Kit
+  - Set up GitLab CI/CD with automated semantic versioning and deployment to a private Docker registry
+- *LANDBANK Worker* — Serverless banking data extraction system
+  - Built with AWS Lambda, Amazon SQS, and Puppeteer for automated data extraction from LANDBANK online portal
+  - Designed an event-driven two-phase authentication pipeline with separate SQS-triggered Lambda functions for login and OTP verification
+  - Implemented session persistence using Firebase Realtime Database across serverless function invocations
+  - Managed infrastructure-as-code using the Serverless Framework
+- Developed React Native mobile apps for LendMN (Mongolia) and LendPinoy (Philippines), lending/financial service applications
+- Set up GitLab CI pipelines to automate React Native builds for LendMN and LendPinoy
+- Created a PDF table scraper CLI with Node.js that extracts and returns cleaned table data as JSON
+- Improved code quality standards and development practices across the team
 - Built multiple web apps with React and Next.js
-- Created a PDF table scraper CLI with Node.js
-- Created multiple Slack bots
-- Improved code quality standards and practices
-** Web Developer at [[https://nomadays.com][Nomadays]], Ulaanbaatar
-*** Jul 2018 - Oct 2018
-- Migrated an Angular app to React
 ** Front-end Developer at [[https://www.eys-style.com][EYS-Style]], Tokyo
 *** Jan 2017 - Jul 2018
-- Web development with Ruby on Rails
+- Worked on a platform for music learners with schedule management and payment processing using Ruby on Rails
+- Created an HTTP client package used across the main Ruby on Rails platform
+- Built SPA applications for company events
 - Developed a custom Slack bot
 - Improved development tooling with Google Apps Script
+- Added test coverage for previously untested codebases
 * Education
 ** Mongolian University of Science and Technology, Ulaanbaatar
 *** Aug 2013 - Jun 2018
